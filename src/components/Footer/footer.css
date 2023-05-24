@@ -1,0 +1,16 @@
+/* .footerText {
+    margin: 0;
+    line-height: .4rem;
+    text-align: center;
+    color: rgb(124, 233, 124);
+} */
+.footer-container {
+    background-color:aliceblue;
+    height: 3rem;
+    /* letter-spacing: .5rem; */
+    /* position: absolute; */
+    /* bottom:0; */
+    width: 100%;
+    /* position: sticky; */
+
+}

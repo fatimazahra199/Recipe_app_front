@@ -1,0 +1,136 @@
+.single-recipe-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10%;
+    padding-bottom: 50px;
+    background-color: #FBFADF;
+    border-radius: 10px;
+}
+/* .recipe-screens {
+    display: flex;
+    flex-direction: row;
+} */
+
+.recipe-img{
+    display: flex;
+    justify-content: center;
+
+}
+
+.details{
+    background-color: #81be6c;
+    position: relative;
+    text-align: center;
+    margin: -4.3em 0 0 0;
+    padding: 0.6em 0;
+    width: 60%;
+
+}
+
+.details_contain{
+    display: flex;
+    justify-content: center;
+}
+.recipe-img-vid {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1% 5%;
+    justify-content: center;
+}
+/* .recipe-img-vid img {
+    border-radius: 20%;
+
+} */
+.recipe-img-vid iframe {
+    border-radius: 5px;
+    margin: 10% 0;
+}
+.recipe-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    border-radius: 8px;
+    /* background-color: rgb(238, 255, 212); */
+    align-items:flex-start;
+    /* justify-content: center; */
+    column-gap: 5rem;
+    width:100%;
+}
+
+.ingrediants {
+    border: 1px solid #81be6c;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #81be6c;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+color: white;
+/* font-size: 2rem !important; */
+
+}
+.recipe-details h2 {
+    text-align: center;
+    padding: 2rem;
+}
+.recipe-details h3 {
+    line-height: 2;
+    font-size: 20px;
+}
+.recipe-details h4 {
+    font-size: medium;
+    text-align: center;
+}
+.recipe-details p, li {
+    font-size: 1rem;
+}
+.back-btn {
+    width: 115px;
+    margin: 2.5%;
+    font-weight: 700;
+}
+.back-btn:hover {
+    opacity: 90%;
+}
+
+.btn {
+    /* margin: 1%; */
+    /* margin-left: 1%; */
+    
+}
+
+.add-btn{
+    border: 2px solid #fb8a7b;
+    background-color: #fb8a7b;
+}
+
+.btn:hover {
+    opacity: 70%;
+}
+
+@media screen and (width <= 992px) {
+    .recipe-screens {
+        flex-direction: column;
+    }
+    .recipe-img-vid img{
+        width: auto;
+    }
+    .recipe-img-vid iframe{
+        width: auto;
+    }
+    .recipe-details{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repart(2, 1fr);
+        gap: 2rem;
+    }
+    .recipe-img-vid iframe {
+        border-radius: 5px;
+        margin: 3% 0;
+        width: 800px;
+
+    }
+        .details {
+            width: 90%;
+    
+        }
+}
