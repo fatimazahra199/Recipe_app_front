@@ -24,7 +24,7 @@ import { RecipeProvider } from "./utils/GlobalState";
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
-  uri: "http://localhost:3001/graphql",
+  uri: "https://delishia-app.onrender.com/graphql",
 });
 
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
